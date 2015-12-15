@@ -8,13 +8,21 @@ class Character(Toon):
 	def getXP(self):
 		return self.xp
 
+	def setXP(self,earned_xp):
+		self.xp += earned_xp
+
 
 ##################
 
 
 warrior = Character("Ben",50,20,100)
+warrior.setXP(10)
 
 
 print warrior.getName()
 print warrior.getStats()
+print warrior.getXP()
+
+warrior.setXP(50)
+
 print warrior.getXP()
