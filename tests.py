@@ -18,6 +18,8 @@ class TestPlayer(unittest.TestCase):
 		self.assertEqual(player.getBlock(),block)
 		self.assertEqual(player.getAttack(),attack)
 
+class TestMob(unittest.TestCase):
+	
 	def test_mob(self):
 		health = 20
 		block = 50
