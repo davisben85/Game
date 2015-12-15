@@ -2,24 +2,19 @@ import unittest
 from toon import toon, character, mob
 
 class TestPlayer(unittest.TestCase):
-	def test_fail(self):
-		self.assertRaises(TypeError)
-	def test_pass(self):
-		self.assertTrue(True)
-	def test_false(self):
-		self.assertFalse(False)
-
+	
 	def test_player(self):
-		health = 99
-		block = 50
+		health = 100
+		block = 60
 		attack = 20
-		player = character.Character("Ben",attack,block,health)
+		player = character.Character("Ben",attack,block, health)
 		self.assertEqual(player.getHealth(),health)
 		self.assertEqual(player.getBlock(),block)
 		self.assertEqual(player.getAttack(),attack)
 
+
 class TestMob(unittest.TestCase):
-	
+
 	def test_mob(self):
 		health = 20
 		block = 50
