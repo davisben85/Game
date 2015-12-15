@@ -10,6 +10,15 @@ class Toon(object):
 
 	def getName(self):
 		return self.name
+		
+	def getHealth(self):
+		return self.hp
+
+	def getAttack(self):
+		return self.attack
+
+	def getBlock(self):
+		return self.block
 
 	def attack_weight(self,level):
 		attack = self.attack * ( self.level * .25 )

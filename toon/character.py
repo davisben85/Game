@@ -1,4 +1,5 @@
 from toon import Toon
+
 class Character(Toon):
 	def __init__(self,name,base_attack,block_chance,base_hp):
 		self.xp = 0
