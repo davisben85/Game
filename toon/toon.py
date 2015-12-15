@@ -14,3 +14,6 @@ class Toon(object,base_hp,base_attack,block_chance):
 
 	def move(self,speed):
 		distance = self.speed
+
+	def inventory(self,items):
+		current_inventory = self.items
